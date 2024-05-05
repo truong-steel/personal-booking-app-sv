@@ -25,9 +25,6 @@ public class Room {
     @Column(name = "room_type")
     private String roomType;
 
-    @Column(name ="room_image")
-    private Blob roomImage;
-
     @Column(name = "room_description")
     private String roomDescription;
 

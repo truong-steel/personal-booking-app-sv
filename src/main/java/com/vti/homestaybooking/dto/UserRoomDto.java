@@ -10,9 +10,9 @@ import java.time.LocalDate;
 public class UserRoomDto {
     private Long id;
 
-    private LocalDate checkInDate;
+    private LocalDate startDate;
 
-    private LocalDate checkOutDate;
+    private LocalDate endDate;
 
     private int totalGuest;
 

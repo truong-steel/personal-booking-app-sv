@@ -15,24 +15,28 @@ import java.time.LocalDate;
 public class UserRoom {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "booking_id", nullable = false)
     private Long id;
-//    @Column(name = "user_id")
-//    private Long userId;
-    @Column(name="check_in")
-    private LocalDate checkInDate;
-    @Column(name="check_out")
-    private LocalDate checkOutDate;
+
+    private LocalDate startDate;
+
+    private LocalDate endDate;
+
     @Column(name="total_guest")
     private int totalGuest;
+
     @Column(name="created_at")
     @CreationTimestamp
     private LocalDate createdAt;
+
     @Column(name="updated_at")
     @UpdateTimestamp
     private LocalDate updatedAt;
+
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
+
     @ManyToOne
     @JoinColumn(name = "room_id" , nullable = false)
     private Room room;

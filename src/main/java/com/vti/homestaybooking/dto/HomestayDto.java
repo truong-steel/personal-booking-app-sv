@@ -27,7 +27,7 @@ public class HomestayDto extends RepresentationModel<HomestayDto> {
 
     private String description;
 
-    private String homestayImg;
+    private String homestayImage;
 
     private String rating;
 
